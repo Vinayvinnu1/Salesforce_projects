@@ -1,0 +1,117 @@
+<template>
+<div class="weatherBackground">
+
+    <div class="wccc">
+
+<div class="cardHeader">
+
+    <lightning-icon
+        icon-name="utility:world"
+        alternative-text="Weather"
+        size="small"
+        class="weatherHeaderIcon">
+    </lightning-icon>
+
+    <span class="headerText">
+        Weather Information
+    </span>
+
+</div>
+
+            <div class="slds-p-around_medium">
+                <!-- Search Section -->
+                <div class="slds-grid slds-gutters slds-wrap">
+
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-4">
+                        <lightning-input
+                            type="search"
+                            label="Search City"
+                            placeholder="Enter city name..."
+                            value={searchQuery}
+                            onchange={handleSearchInput}
+                            onkeypress={handleKeyPress}>
+                        </lightning-input>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4 slds-m-top_large">
+                        <lightning-button
+                            label="Search"
+                            variant="brand"
+                            onclick={handleSearch}
+                            class="searchButton">
+                        </lightning-button>
+                    </div>
+
+                </div>
+
+                <!-- Spinner -->
+                <template if:true={isLoading}>
+                    <div class="slds-m-top_medium">
+                        <lightning-spinner
+                            alternative-text="Loading Weather"
+                            size="medium">
+                        </lightning-spinner>
+                    </div>
+                </template>
+
+                <!-- Error -->
+                <template if:true={errorMessage}>
+                    <div class="slds-text-color_error slds-m-top_medium">
+                        {errorMessage}
+                    </div>
+                </template>
+
+                <!-- Weather Details -->
+                <template if:true={isDataLoaded}>
+                    <div class="wcardbackgroud">
+
+                    <div class="weatherCard slds-m-top_large">
+
+                        <div class="weatherIcon">
+                            {weatherIcon}
+                        </div>
+
+                        <h1 class="cityName">{location}</h1>
+
+                        <div class="temperature">
+                            {temperature}°C
+                        </div>
+
+                        <div class="condition">
+                            {condition}
+                        </div>
+
+                        <div class="weatherDetails">
+
+                            <div class="detailBox">
+                                <p class="label">Humidity</p>
+                                <p class="value">{humidity}%</p>
+                            </div>
+
+                            <div class="detailBox">
+                                <p class="label">Wind Speed</p>
+                                <p class="value">{windSpeed} km/h</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    </div>
+
+                </template>
+
+                <!-- Default Message -->
+                <template if:false={isDataLoaded}>
+
+                    <div class="defaultMessage slds-m-top_large">
+                        Search for a city to view weather information
+                    </div>
+
+                </template>
+
+            </div>
+  
+
+        </div>
+    </div>
+</template>

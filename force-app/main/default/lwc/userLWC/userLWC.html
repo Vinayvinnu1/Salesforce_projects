@@ -1,0 +1,64 @@
+<template>
+
+    <lightning-card class="profile-card">
+
+        <div class="card-header">
+
+           <lightning-layout-item>
+
+                    <div class="slds-grid slds-grid_vertical-align-center">
+
+                        <div class="icon-circle slds-m-right_medium">
+
+                            <lightning-icon
+                                icon-name="standard:user"
+                                size="small"
+                                alternative-text="user">
+                            </lightning-icon>
+
+                        </div>
+                
+
+                        <h1 class="header-title">
+                            My Profile
+                        </h1>
+
+                    </div>
+
+                </lightning-layout-item>
+
+            <lightning-button-icon
+                icon-name="utility:threedots_vertical"
+                variant="border-filled"
+                alternative-text="Show More">
+            </lightning-button-icon>
+
+        </div>
+
+        <div class="profile-content">
+
+            <img
+                src={profileImage}
+                alt="Profile image"
+                class="profile-image">
+
+            <h1>John Doe</h1>
+
+            <p class="designation">
+                Software Engineer
+            </p>
+
+            <div class="status">
+                <span class="dot"></span>
+                Active
+            </div>
+
+            <button class="profile-btn">
+                View Profile
+            </button>
+
+        </div>
+
+    </lightning-card>
+
+</template>

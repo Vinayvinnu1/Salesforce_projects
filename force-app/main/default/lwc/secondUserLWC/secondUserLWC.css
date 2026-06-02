@@ -1,0 +1,89 @@
+/* .project-card{
+    border-radius:20p;
+} */
+
+/* Header */
+
+.header-title{
+    font-size:24px;
+    font-weight:700;
+    color:#08133b;
+}
+
+.icon-wrapper{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:#22c55e;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Image */
+
+.image-section{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+}
+
+/* .project-image{
+    width:150px;
+    height: 150px;
+    object-fit:center;
+} */
+
+/* Stats */
+
+.stats-section{
+    margin-top:25px;
+}
+
+.stat-box{
+    text-align:center;
+    width:130px;
+}
+
+.stat-box h2{
+    font-size:30px;
+    font-weight:500;
+    color:#08133b;
+}
+
+.stat-box p{
+    font-size:15px;
+    color:#5c6470;
+    margin-top:8px;
+}
+
+.divider{
+    width:1px;
+    height:80px;
+    background:#0a0a0a;
+    margin:0 20px;
+}
+
+/* Button */
+
+.full-btn{
+    width: 100%;
+    text-align: center;
+    margin-top:20px;
+    padding:10px;
+
+    border:2px solid #3b82f6;
+    background:white;
+    color:#3b82f6;
+
+    font-size:20px;
+
+    border-radius:10px;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.full-btn lightning-button{
+    width:100%;
+}

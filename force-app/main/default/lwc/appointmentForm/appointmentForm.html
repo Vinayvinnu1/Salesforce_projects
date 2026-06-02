@@ -1,0 +1,26 @@
+<template>
+  <lightning-card title="Book New Appointment" icon-name="standard:event">
+    <div class="slds-p-around_medium">
+
+      <!-- Patient lookup field -->
+      <lightning-record-edit-form object-api-name="Appointment__c">
+        <lightning-input-field field-name="Patient__c"></lightning-input-field>
+        <lightning-input-field field-name="Doctor_Name__c"></lightning-input-field>
+        <lightning-input-field field-name="Appointment_Date__c"></lightning-input-field>
+        <lightning-input-field field-name="Department__c"></lightning-input-field>
+        <lightning-input-field field-name="Priority__c"></lightning-input-field>
+        <lightning-input-field field-name="Status__c"></lightning-input-field>
+        <lightning-input-field field-name="Notes__c"></lightning-input-field>
+
+        <div class="slds-m-top_medium">
+          <lightning-button
+            label="Book Appointment"
+            variant="brand"
+            onclick={handleSubmit}>
+          </lightning-button>
+        </div>
+      </lightning-record-edit-form>
+
+    </div>
+  </lightning-card>
+</template>

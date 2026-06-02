@@ -1,0 +1,156 @@
+<template>
+
+    <!-- Spinner -->
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading">
+        </lightning-spinner>
+    </template>
+
+    <!-- Header -->
+    <lightning-card>
+
+        <div class="youtube-header">
+
+            <div class="youtube-logo"></div>
+
+            <span class="header-title">
+                YouTube Search
+            </span>
+
+        </div>
+
+        <!-- Search -->
+        <div class="search-container">
+
+            <div class="slds-grid slds-gutters">
+
+                <div class="slds-col slds-size_2-of-3">
+
+                    <lightning-input
+                        type="search"
+                        placeholder="Search videos..."
+                        value={searchInput}
+                        onchange={handleSearch}
+                        onkeypress={handleKeyPress}>
+                    </lightning-input>
+
+                </div>
+
+                <div class="slds-col slds-size_1-of-3 button-section">
+
+                    <lightning-button
+                        variant="brand"
+                        label="Search Video On YouTube"
+                        onclick={handleSubmit}>
+                    </lightning-button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+
+    <!-- Results -->
+    <lightning-card title="Results">
+
+        <div class="slds-grid slds-gutters">
+
+            <!-- Left -->
+            <div class="slds-col slds-size_2-of-3">
+
+                <article class="video-card">
+
+                    <iframe
+                        class="video-frame"
+                        src={viewUrl}
+                        allowfullscreen>
+                    </iframe>
+
+                </article>
+
+            </div>
+
+            <!-- Right -->
+            <div class="slds-col slds-size_1-of-3">
+
+                <div class="result-container slds-scrollable_y">
+
+                    <template
+                        for:each={videoResults}
+                        for:item="item">
+
+                        <div
+                            key={item.videoId}
+                            class="result-card">
+
+                            <article class="slds-card">
+
+                                <div class="slds-card__header slds-grid">
+
+                                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+
+                                        <div class="slds-media__figure">
+
+                                            <img
+                                                 class="thumbnail"
+                                                 src={item.thumbnails}
+                                                 alt="Video Thumbnail"/>
+                                        </div>
+
+                                        <div class="slds-media__body">
+
+                                            <h2 class="slds-card__header-title">
+
+                                                <a
+                                                    onclick={watchVideo}
+                                                    data-id={item.videoId}
+                                                    class="video-link">
+
+                                                    <span>
+                                                        {item.title}
+                                                    </span>
+
+                                                </a>
+
+                                            </h2>
+
+                                        </div>
+
+                                    </header>
+
+                                </div>
+
+                                <div class="slds-card__body slds-card__body_inner">
+
+                                    <div class="channel-name">
+                                        By: {item.channelTitle}
+                                    </div>
+
+                                    <div class="published-date">
+                                        Published:
+                                        {item.publishedAt}
+                                    </div>
+
+                                    <div class="description">
+                                        {item.description}
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </template>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+
+</template>

@@ -1,0 +1,114 @@
+<template>
+
+    <lightning-card class="project-card">
+
+        <!-- Header -->
+        <div class="slds-p-around_medium">
+
+            <lightning-layout
+                horizontal-align="spread"
+                vertical-align="center">
+
+                <!-- Left -->
+                <lightning-layout-item>
+
+                    <div class="slds-grid slds-grid_vertical-align-center">
+
+                        <div class="icon-wrapper slds-m-right_medium">
+
+                            <lightning-icon
+                                icon-name="standard:similar_case"
+                                size="small"
+                                alternative-text="Projects">
+                            </lightning-icon>
+
+                        </div>
+
+                        <h1 class="header-title">
+                            My Projects
+                        </h1>
+
+                    </div>
+
+                </lightning-layout-item>
+
+                <!-- Right -->
+                <lightning-layout-item>
+
+                    <lightning-icon
+                        icon-name="utility:threedots"
+                        size="x-small">
+                    </lightning-icon>
+
+                </lightning-layout-item>
+
+            </lightning-layout>
+
+        </div>
+
+        <!-- Icon -->
+        <div class="image-section">
+
+            <lightning-icon
+                icon-name="standard:edit_form"
+                size="large"
+                alternative-text="Edit Form"
+                class="project-image">
+            </lightning-icon>
+
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats-section">
+
+            <lightning-layout
+                horizontal-align="center"
+                vertical-align="center">
+
+                <!-- In Progress -->
+                <lightning-layout-item
+                    padding="around-small">
+
+                    <div class="stat-box">
+
+                        <h2>3</h2>
+
+                        <p>In Progress</p>
+
+                    </div>
+
+                </lightning-layout-item>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+
+                <!-- Completed -->
+                <lightning-layout-item
+                    padding="around-small">
+
+                    <div class="stat-box">
+
+                        <h2>1</h2>
+
+                        <p>Completed</p>
+
+                    </div>
+
+                </lightning-layout-item>
+
+            </lightning-layout>
+
+        </div>
+
+        <!-- Button -->
+        <div class="slds-p-around_large">
+
+        <button class="full-btn">
+            View All Projects        
+        </button>
+
+        </div>
+
+    </lightning-card>
+
+</template>

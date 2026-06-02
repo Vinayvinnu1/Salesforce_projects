@@ -1,0 +1,26 @@
+<template>
+  <lightning-card title="Live Appointment Board" icon-name="utility:broadcast">
+    <div class="slds-p-around_medium">
+
+      <!-- Show loading spinner while subscribing -->
+      <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Connecting..."></lightning-spinner>
+      </template>
+
+      <!-- Show message if no appointments yet -->
+      <template if:false={hasAppointments}>
+        <p class="slds-text-color_weak">Waiting for new appointments...</p>
+      </template>
+
+      <!-- Loop through and display each appointment -->
+      <template for:each={appointments} for:item="appt">
+        <div key={appt.id} class="slds-box slds-m-bottom_small">
+          <p><strong>Doctor:</strong> {appt.doctorName}</p>
+          <p><strong>Status:</strong> {appt.status}</p>
+          <p><strong>Priority:</strong> {appt.priority}</p>
+        </div>
+      </template>
+
+    </div>
+  </lightning-card>
+</template>

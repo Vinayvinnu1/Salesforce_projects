@@ -1,0 +1,58 @@
+<template>
+
+    <lightning-card title="Weather App" icon-name="utility:world">
+
+        <div class="slds-p-around_medium">
+
+            <lightning-input
+                type="search"
+                label="Search City"
+                placeholder="Enter city name"
+                value={city}
+                onchange={handleCityChange}>
+            </lightning-input>
+
+            <div class="slds-m-top_medium">
+
+                <lightning-button
+                    label="Get Weather"
+                    variant="brand"
+                    onclick={getWeatherData}>
+                </lightning-button>
+
+            </div>
+
+            <template if:true={weatherData}>
+
+                <div class="weather-box slds-m-top_large">
+
+                    <h2>{cityName}</h2>
+
+                    <p>
+                        Temperature:
+                        {temperature} °C
+                    </p>
+
+                    <p>
+                        Humidity:
+                        {humidity}%
+                    </p>
+                    <p>
+                        Wind Speed:
+                        {windSpeed} m/s
+                    </p>
+
+                    <p>
+                        Weather:
+                        {weatherMain}
+                    </p>
+
+                </div>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

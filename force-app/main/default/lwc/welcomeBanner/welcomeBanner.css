@@ -1,0 +1,39 @@
+/* .banner-card{
+    border-radius:20px;
+     overflow:hidden; 
+}  */
+
+.banner-container{
+    height: 250px;
+    border-radius:20px;
+    margin-bottom:20px;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:50px;
+}
+
+.content-section{
+    max-width:100%;
+}
+
+.title{
+    font-size:35px;
+    font-weight:700;
+    color:#08133b;
+
+    margin-bottom:15px;
+}
+
+.description{
+    font-size:15px;
+    line-height:0.5;
+    color:#1f2937;
+
+    margin-bottom:25px;
+}

@@ -1,0 +1,49 @@
+<template>
+
+    <div class="background">
+
+        <div class="container">
+
+            <!-- Main Button Card -->
+            <lightning-card
+                title="Joke API"
+                icon-name="utility:emoji">
+
+                <div class="slds-p-around_medium">
+
+                    <lightning-button
+                        label="Get a Random Joke"
+                        variant="brand"
+                        onclick={getJokeData}>
+                    </lightning-button>
+
+                </div>
+
+            </lightning-card>
+
+            <!-- Custom Joke Card -->
+            <template if:true={setup}>
+
+                <div class="joke-card">
+
+                    <h1>😂 Here's a Joke For You</h1>
+
+                    <p class="setup">
+                        <strong>Setup :</strong>
+                        {setup}
+                    </p>
+
+                    <p class="punchline">
+                        <strong>Punchline :</strong>
+                        {punchline}
+                    </p>
+
+                </div>
+
+            </template>
+
+        </div>
+
+    </div>
+
+</template>

@@ -1,0 +1,121 @@
+<template>
+
+    <div class="slds-card notification-card">
+
+        <!-- Header -->
+        <div class="slds-grid slds-grid_align-spread slds-p-around_medium">
+
+            <div class="slds-media slds-media_center">
+
+                <div class="slds-media__figure">
+                    <div class="icon-circle orange">
+                        <lightning-icon
+                            icon-name="utility:notification"
+                            size="small"
+                            alternative-text="Notification">
+                        </lightning-icon>
+                    </div>
+                </div>
+
+                <div class="slds-media__body">
+                    <h2 class="header-title">Notifications</h2>
+                </div>
+
+            </div>
+
+            <div>
+                <lightning-icon
+                    icon-name="utility:threedots_vertical"
+                    size="x-small">
+                </lightning-icon>
+            </div>
+
+        </div>
+
+        <!-- Notification 1 -->
+        <div class="notification-row">
+
+            <div class="left-section">
+
+                <div class="icon-circle purple">
+                    <lightning-icon
+                        icon-name="standard:event"
+                        size="small">
+                    </lightning-icon>
+                </div>
+
+                <div>
+                    <h3 class="title">Team Meeting</h3>
+                    <p class="subtitle">Today at 10:00 AM</p>
+                </div>
+
+            </div>
+
+            <div class="time">
+                10:00 AM
+            </div>
+
+        </div>
+
+        <!-- Notification 2 -->
+        <div class="notification-row">
+
+            <div class="left-section">
+
+                <div class="icon-circle blue">
+                    <lightning-icon
+                        icon-name="standard:document"
+                        size="small">
+                    </lightning-icon>
+                </div>
+
+                <div>
+                    <h3 class="title">Project Deadline</h3>
+                    <p class="subtitle">Salesforce Integration</p>
+                </div>
+
+            </div>
+
+            <div class="time">
+                Yesterday
+            </div>
+
+        </div>
+
+        <!-- Notification 3 -->
+        <div class="notification-row">
+
+            <div class="left-section">
+
+                <div class="icon-circle green">
+                    <lightning-icon
+                        icon-name="standard:people"
+                        size="small">
+                    </lightning-icon>
+                </div>
+
+                <div>
+                    <h3 class="title">Team Outing</h3>
+                    <p class="subtitle">Friday at 4:00 PM</p>
+                </div>
+
+            </div>
+
+            <div class="time">
+                2 Days Ago
+            </div>
+
+        </div>
+
+        <!-- Button -->
+        <div class="slds-p-around_medium">
+
+            <button class="view-btn">
+                View All Notifications
+            </button>
+
+        </div>
+
+    </div>
+
+</template>

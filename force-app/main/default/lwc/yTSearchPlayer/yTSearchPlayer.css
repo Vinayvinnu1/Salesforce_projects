@@ -1,0 +1,128 @@
+.youtube-header {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #f4f4f4;
+
+    padding: 15px;
+}
+
+.youtube-logo {
+
+    width: 65px;
+
+    height: 60px;
+
+    margin-right: 12px;
+
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg');
+
+    background-size: contain;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+}
+
+.header-title {
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
+    color: #1f1f1f;
+}
+
+.search-container {
+
+    padding: 1rem;
+}
+
+.button-section {
+
+    padding-top: 19px;
+}
+
+.video-card {
+
+    margin: 5px;
+}
+
+.video-frame {
+
+    height: 450px;
+
+    width: 100%;
+
+    border: none;
+
+    border-radius: 8px;
+}
+
+.result-container {
+
+    height: 450px;
+
+    border-left: 1px solid #d8dde6;
+
+    padding-left: 8px;
+}
+
+.result-card {
+
+    margin-bottom: 10px;
+}
+
+.thumbnail {
+
+    width: 90px;
+
+    height: 70px;
+
+    border-radius: 8px;
+
+    object-fit: cover;
+}
+
+.video-link {
+
+    cursor: pointer;
+
+    color: #0176d3;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.video-link:hover {
+
+    text-decoration: underline;
+}
+
+.channel-name {
+
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+.published-date {
+
+    color: gray;
+
+    font-size: 0.8rem;
+
+    margin-bottom: 6px;
+}
+
+.description {
+
+    font-size: 0.9rem;
+
+    color: #444;
+}

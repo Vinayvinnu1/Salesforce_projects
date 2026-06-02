@@ -1,0 +1,110 @@
+/* custom weather css without card */
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.weatherHeaderIcon {
+    --slds-c-icon-color-foreground-default: white;
+}
+
+.headerText {
+    color: white;
+}
+.weatherBackground {
+    min-height: 500px;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.wccc {
+    background: linear-gradient(135deg, #65026e, #c3ccf5);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.wcardbackground {
+    background: linear-gradient(135deg, #0333b9, #8cbcd8);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.weatherCard {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    color: rgb(251, 248, 248);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+/* .wccc {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 20px;
+    padding: 10px;
+} */
+
+/* .wccc .slds-card {
+    background: transparent;
+} */
+
+.weatherIcon {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.cityName {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.temperature {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.condition {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.weatherDetails {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.detailBox {
+    background: rgba(255,255,255,0.2);
+    padding: 15px 25px;
+    border-radius: 12px;
+    min-width: 140px;
+}
+
+.label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.value {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.defaultMessage {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 40px;
+}
+
+.searchButton {
+    width: 100%;
+}

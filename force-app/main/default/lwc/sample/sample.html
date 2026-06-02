@@ -1,0 +1,65 @@
+<template>
+	<!-- Container Tags -->
+	<div class="box">This is a div container</div>
+	<span>This is a span container</span>
+
+	<!-- Heading Tags -->
+	<h1>Main Heading</h1>
+	<h6>Sub Heading</h6>
+
+	<!-- Text Formatting Tags -->
+	<p>This is paragraph</p>
+	<b>Bold</b>
+    <br>
+	<strong> Important </strong>
+    <br>
+	<i> Italic</i>
+    <br>
+	<em> Emphasized </em>
+    <br>
+	<u> Underline</u>
+	<br>
+	Line1<br>Line2
+	<hr>
+
+	<!-- List Tags -->
+	<ul>
+		<li>Apple</li>
+		<li>Banana</li>
+		<li>Cherry</li>
+	</ul>
+	<ol>
+		<li>Item1</li>
+		<li>Item2</li>
+		<li>Item3</li>
+	</ol>
+    <table>
+    <tbody>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>vinay</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+		<table style="border:2px solid #1976d2; margin:16px 0; padding:8px; color:#222; background:#e3f2fd; border-collapse:collapse;">
+			<tbody>
+				<tr>
+					<th style="border:1px solid #1976d2; padding:8px; color:#1976d2; background:#bbdefb;">name</th>
+					<th style="border:1px solid #1976d2; padding:8px; color:#1976d2; background:#bbdefb;">age</th>
+				</tr>
+				<tr>
+					<td style="border:1px solid #1976d2; padding:8px;">vinay</td>
+					<td style="border:1px solid #1976d2; padding:8px;">25</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- Card with click handler -->
+		<div class="card" onclick={handleCardClick} style="border:1px solid #ccc; border-radius:8px; padding:16px; margin:16px 0; box-shadow:0 2px 8px #eee; cursor:pointer; max-width:300px;">
+			<h2>Clickable Card</h2>
+			<p>Click this card to trigger an action.</p>
+		</div>
+</template>
