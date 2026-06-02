@@ -4,7 +4,7 @@ public with sharing class YTController {
         'https://www.googleapis.com/youtube/v3/search';
 
     private static final String API_KEY =
-        'AIzaSyB8qAfXDjDF04fhO5o326TgB-WXzKOi-7k';
+        'Your api key';
 
     @AuraEnabled(cacheable=true)
     public static List<MyWrapper> getYTVideos(String searchKey) {
