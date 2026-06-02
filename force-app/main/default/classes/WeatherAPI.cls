@@ -13,7 +13,7 @@ public with sharing class WeatherAPI {
             'https://api.openweathermap.org/data/2.5/weather?q='
             + encodedCity +
             '&units=metric'
-            + '&appid=faf1af4cf05920d3508051d14ec31ce7';
+            + '&appid= //openweatherapikey';
 
         req.setEndpoint(endpoint);
 
